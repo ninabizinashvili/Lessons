@@ -1,0 +1,44 @@
+body {
+    margin:0px;
+    padding:0px;
+
+}
+
+article {
+    width:368.4px;
+    height: 416px;
+    padding:48px 40px 36px;
+    border:1px solid #dadce0;
+    border-radius: 8px;
+    margin: 120px auto;
+
+}
+
+article svg {
+    display: blok;
+    margin: auto;
+
+}
+article h1 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: rgb(32,33,36);
+
+
+}
+
+
+article p { 
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(32,33,36);
+
+
+
+
+    
+}

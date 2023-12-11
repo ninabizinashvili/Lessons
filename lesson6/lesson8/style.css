@@ -1,0 +1,19 @@
+body {
+    margin:0px;
+    padding:0px;
+}
+
+header {
+    height: 79px;
+    background-color: #f2f2f2;
+
+}
+
+header section {
+    width: 980px;
+    margin:auto;
+}
+
+header form,nav,ul,li {
+    display:inline-block;
+}

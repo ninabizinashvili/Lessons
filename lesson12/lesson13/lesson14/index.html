@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson14- HTML/CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,500;0,600;1,400&family=Open+Sans:wght@300;400;500&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="htpps://fonts.googleapis.com/css2?family=playfair=display:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"integrity="sha512-1sCRdKRHBV2PBLUDRB4tMg1w2Ypf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BCIA=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+      <header>
+      <nav class="navbar navbar-expand-lg  m-auto">
+        <div class="container-fluid">
+          <button 
+          class="navbar-toggler" 
+          type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#navbarNav" 
+          aria-controls="navbarNav" 
+          aria-expanded="false" 
+          aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active"  href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Lifestyle</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Family</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Food</a>
+              </li>
+              </ul>
+              <ul class="navbar-nav">
+               <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fa-brands fa youtube"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fa brands fa-instagram"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fa-brands fa-pinterest-p"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+       
+      </nav>
+      </header>
+      <main>
+        <section class="banner-area">
+          <h3>A LIFESTYLE BLOG</h3>
+          <h1>Lovely Little Things</h1>
+          <img src="https://static.wixstatic.com/media/f61af8_e15083b95c954f71a1b4d9a5a78ded70~mv2_d_2121_1312_s_2.jpg/v1/fill/w_1899,h_849,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/f61af8_e1508b95c954f71a1b4d9a5a78ded70~mv2_d_2121_1312_s_2.jpg" alt="" />
+
+        </section>
+        <section class="cards-area d-flex justify-content-between m-auto">
+          <div class="card">
+            <img src="data:image/jpeg;base64,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" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Lifestyle</h5>
+              <p class="card-text">Click here to edit me</p>
+              <hr>
+            </div>
+          </div>
+            <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiiw43kCPCRC5Io2KtU-9cf3zwyxLVtNaFBg&usqp=CAU" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Family</h5>
+              <p class="card-text">Click here to edit me</p>
+             <hr>
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSobaYXDcWNabfbKVNxgGc1D_z8uR3SlWe5DQ&usqp=CAU" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">food</h5>
+              <p class="card-text">Click here to edit me</p>
+              <hr>
+            </div>
+          </div>
+
+        </section>
+        <section class="posts-area d-flex justify-content-between m-auto">
+          <aside class="left">
+            <article class="card-post">
+              <img 
+              src="https://static.wixstatic.com/media/ae5901bd4fda41009c4a19bb70d05.jpg/v1/fill/w_1175,h_661,fp_0.50_0.50,q_90,enc_auto/ae5901bd4fda41009c4cc4a19bb70d05.jpg" alt="" />
+
+              <div class="card-body">
+                <div class="user d-flex">
+                  <svg
+                  width="32"
+                  height="32"
+                  viewbox="0 0 1000 1000"
+                  class="dDcMfv"
+                  >
+                  <circle cx="500" r="500" fill="#cccccc"></circle>
+                    <path
+                    fill="#a0a09f"
+                    d="M830.8,874.927c-77.344-60.8-187.181-104.877-227.88-111.347-20.335-3.233-20.8-59.1-20.8-59.1s59.746-59.106,72.768-138.584c35.029,0,56.666-84.5,21.631-114.226c77.986,420.37,721.551,206,501,206s324.015,420.37,325.473,451.666c-35.033,29.729-13.4,114.226,21.632,114.226,13.021,79.478,72.77,138.584,72.77,138.584s-0.464,55.871-20.8,59.1c-40.883,6.5-151.537,50.943-228.934,112.176c65.84,784.12,0,649.751,0,500,0,223.858,0,50,0,0s500,223.858,500,500c1000,649.3,934.559,783.311,830.8,874.927M500,1000h0Z">
+                  </path>
+                </svg>
+                <div>
+                  <span>Admin</span>
+                  <svg
+                  xmlns="https://www.w3.org/2000/svg"
+                  width="19"
+                  viewbox="0 0 19 19"
+                  class="blog-post-post-list-description-fill"style="fill-rule: evenodd">
+                  <path
+                  d="M15.3812,6.495914 L12.6789333,8.77258837C12.6191333,8.84477644 12.5099333,8.85722265 12.4354,8.79997005 L9.78686667,6.14327115 C9.67766667,5.99225704 9.46186667,5.954918399.305,6.05863687 C9.26946667,6.08186981 9.23913333,6.110910999.21573333,6.14493065 L6.60013333,8.81075677 C6.5464,8.886263836.43893333,8.90534803 6.3592,8.85390366 C6.34446667,8.843946696.33146667,8.83233022 6.32106667,8.81905425 L3.61966667,6.50587098 C3.5018,6.36149485 3.28426667,6.33577266 3.13346667,6.44861837 C3.0494,6.51167921 3,6.60792997 3,6.70998895 L4,14 L15,14 L16,6.70169148 C16,6.51831719 15.8448667,6.36979232 15.6533333,6.36979232 C15.5476,6.36979232 15.4470667,6.41625821 15.3812,6.495914 Z "></path>
+                </svg>
+                </div>
+                <span>Mar 25 - 1 min</span>
+                </div>
+              </div>
+              <h3>The Girl From Ipanema</h3>
+              <p>
+                Create a blog post subtitle that summarizes yur post in a few 
+                short,punchy sentences and entices your audience to continue 
+                reading ....
+              </p>
+              <hr />
+              <div class="card-footer">
+                <ul>
+                  <li>
+                    <svg
+                    xmlns="https://www.w3.org/2000/svg"
+                    width="19"
+                    viewbox="0 0 19 19"
+                    role="img"
+                    aria-label="1,827 views"
+                    class="blog-post-post-list-description-fill">
+                    <title></title>
+                    <path
+                    d="M18.6514224,10.4604595 C17.3924224,11.9688254 13.9774224,15.4790227 9.46342244,15.5 L9.42442244,15.5 C6.26242244,15.5 3.20842244,13.79384830.345422443,10.4264963 C-0.115140814,9.88163847-0.115140814,9.08439833 0.345422443,8.5395405 C1.60442244,7.03117456 5.01942244,3.52097727 9.53342244,3.5 L9.57342244,3.5 C12.7354224,3.5 15.7894224,5.2061516718.6514224,8.5735037 C19.1122856,9.11875503 19.1118633,9.9156948418.6514224,10.4604595 Z M17.8674224,0.2228003 C15.2084224,6.09518855 12.4194224,4.50990594 9.57442244,4.50990594 L9.54042244,4.50990594 C5.46142244,4.52888537 2.30642244,7.7833359691.14042244,9.18084575 C3.79142244,14.4920919 L9.46042244,14.4920919 C13.5394224,14.474111416.6934224,11.2196371 17.8604224,9.822151 C18.0095734,9.651113118.0125381,9.39726759 17.8674224,9.2228003 L17.8674224,9.2228003 Z M9.49942244,13.3932823 C7.35251405,13.3646853 5.63255349,11.60802635.65157552,9.46333471 C13.4349115,11.6625186 11.6668124,13.4054619.49942244,13.3932823 L9.49942244,13.3932823 ZM9.49942244,6.61762258 C7.91092198,6.63961751 6.63891624,7.939901936.65354481,9.52676854 C6.66817338,11.1136351 7.96393479,12.39029979.55257137,12.3820695 C11.1412079,12.3758393 12.4252698,11.087433312.4254224,9.50049946 C12.4127657,7.89797688 11.1037033,6.608207389.49943344,6.61762258 L9.49942244,6.61762258 Z"
+                    ></path>
+                  </svg>
+                  <span>1,876</span>
+                  </li>
+                  <li>
+                    <svg
+                    xmlns="https://www.w3.org/2000/svg"
+                    width="19"
+                    viewbox="19"
+                    role="img"
+                    aria-label="0 comments"
+                    class="blog-post-post-list-description-fill blog-link-hover-fill">
+                    <title></title>
+                    <path
+                    d="M9.5,13 L15,13 C15.5522847,13 16,12.552284716,12 L16,12 L16,5 C16,4.44771525 15.5522847,4 15,4 L15,4 L4,4 L4,4 C3.44771525,4 3,4.44771525 3,5 L3,12 C3,12.55338471.44771525,13 4,13 L7,13 L7,15.5 L9.5,13 Z M15.0081158,13.973325 L10,13.973325 L7.42191625,16.5445317 C6.63661359,17.32773956,17.0667904 6,15.9700713 L6,13.973325 L3.99188419,13.973325 C2.89179693,13.973325 2,13.0706688 2,11.979044 L2,4.994281 C2,3.89287002 2.89339733,3.99188419,3 L15.0081158,3 C16.1082031,3 17,3.90265618 17,4.994281 L17,11.979044 C17.080454916.1066027,13.973325 15.0081158,13.973325 Z"
+                    ></path>
+                    </svg>
+                    <span>0</span>
+                    </li>
+                    </ul>
+                    <ul>
+                      <li>
+                        <span>46</span>
+                        <i class="fa-regular fa-heart"></i>
+                      </li>
+                    </ul>
+                    </div>
+                  </div>
+                    </article>
+                    <article class="card-post">
+                      <img 
+                      src="https://static.wixtatic.com/media/ae5901bd4fda41009c4cc19bb70d05.jpg/v1/fill/w_1175,h_661,fp_0.50,_0.50,q_90,env_auto/ae5901bd4fda41009c4cc4a19bb70d05.jpg"
+                      alt="" />
+                      <div class="card-body">
+                        <div class="user d-flex">
+                        <svg
+                        width="32"
+                        height="32"
+                        viewbox="0 0 1000 1000"
+                        class="dDcMfv"
+                        >
+                        <circle cx="500" cy="500" r="500" fill="#cccccc"></circle>
+                        <path
+                        fill="#a0a09f"
+                        d="M830.8,874.927C-77.344-60.8-187.181-104.877-227.88-111.347-20.335-3.233-20.8-59.1-20.8-59.1S59.746-59.106,72.768-138.584c35.029,0,56.666-84.5,21.631-114.226C677.986,420.37,721.551,206,501,206S324.015,420.37,325.473,451.666c-35.033,29.729-13.4,114.226,21.632,114.226,13.021,79.478,72.77,138.584,72.77,138.584s-0.464,55.871-20.8,59.1c-40.883,6.5-151.537,50.943-228.934,112.176C65.84,784.12,0,649.751,0,500,0,223.858,223.858,0,50,0,0S500,223.858,500,500C100,649.3,934.559,783.311,830.8,874.927M500,1000H0Z"
+                        ></path>
+                        </svg>
+                        <div class="user-info">
+                          <div>
+                            <span>Admin</span>
+                            <svg
+                            xmlns="https://www.w3.org/2000/svg"
+                            width="19"
+                            viewbox="0 0 19 19"
+                            class="blog-post-post-list-description-fill"
+                            stle="fill-rule:evenodd"
+                            >
+                            <path
+                            d="M15.3812,6.495914 L12.6789333,8.77258837 C12.6191333,8.84477644 12.5099333,8.85722265 12.4354,8.79997005 C12.4215333,8.79001308 12.4094,8.77756686 12.3998667,8.76429089 L9.78686667,6.14327115 C9.677666667,5.99225704 9.46186667,5.954918399.305,6.05863687 C9.26946667,6.08186981 9.23913333,6.110910999.21573333,6.14493065 L6.60013333,8.81075677 C6.5464,8.886263836.43893333,8.90534803 6.3592,8.85390366 C6.34446667,8.843946696.33146667,8.83233022 6.32106667,8.81905425 L3.61966667,6.50587098 C3.0494,6.70169148,6.36979232 C15.5476,6.36979232 15.4470667,6.41625821 15.3812,6.495914 Z"
+                            ></path>
+                            </svg>
+                          </div>
+                          <span>Mar 25 -1 min</span>
+                        </div>
+                        </div>
+                        <h3>The Girl From Ipanema</h3>
+                        <p>
+                          Create a blog post subtitle that summarizes your post in a few
+                          short, punchy sentences and entices your audience to continue reading ...
+
+                        </p>
+                        <hr />
+                        <div class="card-footer">
+                          <ul>
+                            <li>
+                              <svg
+                              xmlns="https://www.w3.org/2000/svg"
+                              width="19"
+                              viewbox="0 0 19 19"
+                              role="img"
+                              aria-label="1,827 views"
+                              class="blog-post-post-list-description-fill"
+                              >
+                            <title></title>
+                            <path
+                            d="M18.6514224,10.4604595 C17.3924224,11.9688254 13.9774224,15.4790227 9.46342244,15.5 L9.42442244,15.5 C6.26242244,15.5 3.20842244,13.79384830.34542243,10.4264963 C-0.115140814,9.88163847-0.115140814,9.08439833 0.345422443,8.5395405 C1.60442244,7.03117456 5.01942244,3.52097727 9.53342244,3.5 L9.57342244,3.5 C12.7354224,3.5 15.7894224,5.2061516718.6524224,10.4604595 Z M17.8674224,9.2228003 C15.2084224,6.09518855 12.4194224,4.50990594 9.57442244,4.50990594 L9.54042244,4.50990594 C5.46142244,4.52888537 2.30642244,7.783359691.14042244,9.18084575 C0.991393136,9.3517953 0.988008897,9.605338571.13242244,9.78019645 C3.79142244,12.9078082 6.58142244,14.49209199.42542244,14.4920919 L9.46042244,14.4920919 C13.5394224,14.474111416.69342244,11.2196371 17.8604224,9.822151 C18.0095734,9.651113118.0125381,9.39726759 17.8674224,9.2228003 L17.8674224,9.2228003 Z M9.49942244,13.3932823 C7.35251405,13.3646853 5.63255349,11.60802635.65157552,9.46333471 C5.67059754,7.31864313 7.42144652,5.5927269613.4514224,9.49750271 C13.4349115,11.6625186 11.6668124,13.40546519.49942244,6.61762258 C7.91092198,6.63961751 6.63891624,7.939901936.65354481,9.52676854 C6.66817338,11.1136351 7.96393479,12.39029979.55257137,12.3830695 C11.1412079,12.3758393 12.42252698,11.087433312.4254224,9.50049946 C12.4127657,7.89797688 11.1037033,6.608207389.49942244,6.61762258 L9.49942244,6.61762258 Z"
+                            ></path>
+                            </svg>
+                            <span>1,876</span>
+                            </li>
+                            <li>
+                              <svg
+                              xmlns="https://www.w3.org/2000/svg"
+                              width="19"
+                              viewbox="0 0 19 19"
+                              role="img"
+                              aria-label="0 comments"
+                              class="blog-post-post-list-description-fill
+                              blog-link-hover-fill"
+                              >
+                              <title></title>
+                              <path
+                              d="M9.5,13 L15,13 C15.5522847,1316,12.5522847 16,12 L16,12 L16,12 L16,5 C16,4.44771525 15.5522847,4 15,4 L15,4 L4,4 C3.44771525,4 3,4.44771525 3,5 L3,12 C3,12.55228473.44771525,13 4,13 L7.42191625,16.5445317 C6.63661359,17.32773956,17.0667904 6,15.9700713 L6,13.973325 L3.99188419,13.973325 C2,3.89287002 2.89339733,3 3.99188419,3. L15.0081158,3 C16.1082031,3 17,3.90265618 17,4.994281 L17,11.979044 C17,13.080454916.1066027,13.973325 15.0081158,13.973325 Z"
+                              ></path>
+                              </svg>
+                              <span>0</span>
+                              </li>
+                              </ul>
+                              <ul>
+                                <li>
+                                  <span>46</span>
+                                  <i class="fa-regular fa-hearst"></i>
+                                </li>
+                              </ul>
+                            </div>
+                          </article>
+                          </aside>
+          <aside class="right">
+            <div class="card" style="width: 18rem;">
+              <img src="https://static.wixstatic.com/media/f61af8_7c1e4605eefa400e90e8475c04651311~mv2_d_2120_1414_s_2.jpg/v1/fill/w_326,h_289,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/f61af8_7cle4605eefa400e90e8475c04651311~mv2_d_2120_1414_s_2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">ABOUT HEATHER</h5>
+                <p class="card-text">
+                  I'm a paragrap.Click here to add your own text and edit me. 
+                  I'm a great place fot you to tell a story.
+                </p>
+                <p>Email:info@mysity.com></p>
+              </div>
+            </div>
+          </aside>
+        </section>
+        <section class="image-gallery">
+          <div class="box1">
+            <article>
+              <p>
+                @wix: #wix, #website, #freewebsite, #websitetemlate, #wix.com"
+                </p>
+                </article>
+                </div>
+                <div class="box2">
+                  <article>
+                    <p>
+                      @wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com 
+                      </p>
+                  </article>
+                </div>
+                <div class="box3">
+                  <article>
+                    <p>
+                      @wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com        
+                    </p>
+                  </article>
+                </div>
+                <div class="box4">
+                  <article>
+                  <p>
+                  @wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com 
+                  </p>
+                  </article>
+                </div>
+                <div class="box5">
+                  <article>
+                    <p>
+                      @wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com 
+
+                    </p>
+                  </article>
+                </div>
+                </section>
+                </main>
+                <footer>
+                  <section class="footer-body m-auto">
+                    <h2>JOIN MY MAILING LIST</h2>
+                    <form>
+                      <div class="mb-3">
+                        <input
+                        type="email"
+                        class="form-control"
+                        id="exampleInputEmail"
+                        aria-describedby="emailHelp"
+                        />
+                      </div>
+                      <button type="submit" class="justify-content-between align-items-center">
+                        <p>
+                          2035 by Lovely Little Things. Powered and secured by 
+                          <a href="#">Wix</a>
+                        </p>
+                          <ul class="navbar-nav">
+                            <li lass="nav-item">
+                              <a class="nav-link" href="#">
+                                <i class="fa-brands fa-facebook-f"></i>
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">
+                              <i class="fa-brands fa-youtube"></i>
+                              </a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                  <i class="fa-brands fa-pinterest-p"></i>
+                                </a>
+                              </li>
+                            </ul>
+                          </article>
+                        </section>
+                        </footer>
+                    </body>
+                  </html>

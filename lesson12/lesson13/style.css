@@ -1,0 +1,16 @@
+.carousel-item {
+    height: 500px;
+    object-fit: cover;
+
+}
+
+form {
+    padding:20px 30px;
+    background-color: rgb(23,4,4);
+    border-radius: 10px;
+    color: #fff!important;
+}
+
+form * {
+    color: #fff!important;
+}

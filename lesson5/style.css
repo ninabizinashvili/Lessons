@@ -1,0 +1,113 @@
+header {
+    height: 120px;
+    background-color: grey;
+    border:3px solid black;
+}
+
+header nav {
+    height: 50px;
+    background-color: black;
+    margin-top: 12px;
+
+}
+
+header h1 {
+    margin-bottom: 5px;
+    text-align: center;
+
+
+}
+
+header ul {
+    list-style: none;
+    float:right;
+
+
+}
+
+header ul li {
+    display: inline-block;
+    margin:0px 10px;
+
+}
+
+header ul li a {
+    color: white;
+    font-size: 19px;
+    text-decoration: none;
+
+}
+
+main {
+    height: 550px;
+    margin-top: 10px;
+
+
+}
+
+main h3 {
+    text-align: center;
+}
+
+main .left, .right {
+    width:calc(28% - 3px);
+    height: 100%;
+    display: inline-block;
+    border:3px solid black;
+}
+
+main .left {
+
+    background-color: red;
+    margin-right: 2%;
+    float: left;
+
+
+    
+}
+
+main section {
+    width:calc(39% - 3px);
+    height: 100%;
+    background-color: yellow;
+    display: inline-block;
+    border:3px solid black;
+
+}
+
+main .right {
+    background-color: steelblue;
+    margin-left: 2%;
+    float: right;
+
+}
+
+main section article {
+   width: calc(100% - 20px);
+    height: 110px;
+    margin: 15px auto;
+    background-color: green;
+    border:3px solid black;
+    transition:0.5s;
+    
+
+}
+
+main section article:hover {
+    background-color:  rgba(0,128,0,1);
+     
+}
+
+main section .first {
+    margin-top: 100px!important;
+
+}
+
+footer {
+    height: 70px;
+    background-color: blue;
+    border:3px solid black;
+    text-align: center;
+    margin-top: 20px;
+
+}
